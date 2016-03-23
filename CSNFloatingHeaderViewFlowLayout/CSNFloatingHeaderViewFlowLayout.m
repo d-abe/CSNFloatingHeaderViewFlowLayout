@@ -74,7 +74,8 @@
         
         UICollectionViewLayoutAttributes *layoutAttributes = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
         
-        [answer addObject:layoutAttributes];
+        if (layoutAttributes)
+            [answer addObject:layoutAttributes];
         
     }];
     
